@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+{% block main_content %}
+    <div>
+        {% for session in session_list %}
+            {{ session.movie.title }}
+            <br>
+            {{ session.movie.description }}
+            <br>
+            {{ session.movie.cover_image }}
+        {% endfor %}
+    </div>
+{% endblock %}

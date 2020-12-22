@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .navbar-horizontal {
+            display: flex;
+            flex-direction: row;
+            margin: 0px;
+            width: auto;
+            font-family: sans-serif;
+            background: #e3f2fd;
+        }
+
+        h1 {
+            position: center;
+            padding: 5px;
+            border-right: 5px solid black;
+        }
+
+        {#ul li:not(:last-child):after {#}
+        {#    content: "|";#}
+
+        {#----------------------------------#}
+        #main_left_menu_bar ul {
+            padding-left: 5px;
+            border-right: 5px solid black;
+            background: black;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+
+        #main_left_menu_bar a {
+            font-family: sans-serif;
+        }
+
+    </style>
+</head>
+
+<body>
+<nav class="navbar-horizontal">
+    <div style="display: inline">
+        <h1>Cinema's title</h1>
+    </div>
+
+    <ul ID="#main_left_menu" class="standard-nav visible-lg">
+        <li><a class="btn button-light" style="color: black" href={% url 'today_schedule' %}>Today's Schedule</a>
+        </li>
+        <li><a class="btn button-light" style="color: black" href={% url 'tomorrow_schedule' %}>Tomorrow
+            Schedule</a>
+        </li>
+        <li><a class="btn button-light" style="color: black" href={% url 'today_schedule' %}>My tickets</a></li>
+    </ul>
+
+    <div>
+        <ul ID="#main_center_menu">
+            <li>
+                <a class="btn button-light" style="color: black" href={% url 'today_schedule' %}>Create/update movie</a>
+            </li>
+            <li>
+                <a class="btn button-light" style="color: black" href={% url 'today_schedule' %}>Create/update Hall</a>
+            </li>
+            <li>
+                <a class="btn button-light" style="color: black" href={% url 'today_schedule' %}>Create/update
+                    Session</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul class="#main_right_menu">
+            <li>
+                <a class="btn button-light" style="color: black" href={% url 'today_schedule' %}>Login</a>
+            </li>
+            <li><a class="btn button-light" style="color: black" href={% url 'today_schedule' %}>Register</a></li>
+            <li><a class="btn button-light" style="color: black" href={% url 'today_schedule' %}>Logout</a></li>
+        </ul>
+    </div>
+</nav>
+</body>
+</html>

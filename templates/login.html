@@ -1,0 +1,12 @@
+{% extends "main.html" %}
+{% block main_content %}
+    <form method="post">
+        {% csrf_token %}
+        <div>
+            <table>{{  form.as_table }}</table>
+            <button type="submit" class="btn btn-light">Login</button>
+            <a type="button" class="btn btn-light" href={% url 'register' %}>Register</a>
+        </div>
+    </form>
+
+{% endblock %}

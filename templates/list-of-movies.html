@@ -1,0 +1,6 @@
+{% extends 'main.html' %}
+{% for movie in movie_list %}
+    {{ movie.title}}
+    {{ movie.description }}
+    {{ movie.cover_image }}
+{% endfor%}
